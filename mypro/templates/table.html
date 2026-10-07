@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <table class="table">
+  <thead>
+    <tr>
+      <th scope="col">firstName</th>
+      <th scope="col">lastname</th>
+      <th scope="col">email</th>
+      <th scope="col">Age</th>
+       <th scope="col">update</th>
+    </tr>
+
+  <tr>
+      <td >{{student.id}}</td>
+     <td >{{student.firstName}}</td>
+     <td >{{student.lastname}}</td>
+      <td >{{student.email}}</td>
+        <td >{{student.age}}</td>
+        <t>
+            <a href="{%url 'update '%}" class="btn btn-primary"></a>
+        </t>
+    </tr>
+
+
+  </tbody>
+</table>
